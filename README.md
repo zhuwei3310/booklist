@@ -2,7 +2,7 @@
 
 本仓库用于存放淘淘阅读书源配置。
 
-## 色友小说书源
+## 小说书源
 
 - 导入文件：`booklistsources.zip`
 - 目标站点：`https://seyouxiaoshuo.com/`
