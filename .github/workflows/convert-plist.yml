@@ -1,0 +1,48 @@
+name: Convert plist to XML
+
+on:
+  push:
+    paths:
+      - '.github/workflows/convert-plist.yml'
+      - 'seyouxiaoshuo_taotao.plist'
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Convert binary plist to XML text
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import plistlib
+
+          path = Path('seyouxiaoshuo_taotao.plist')
+          data = plistlib.loads(path.read_bytes())
+          path.write_bytes(
+              plistlib.dumps(data, fmt=plistlib.FMT_XML, sort_keys=False)
+          )
+
+          text = path.read_text(encoding='utf-8')
+          assert text.startswith('<?xml version="1.0" encoding="UTF-8"?>')
+          assert len(data['serverList'][0]['cateBooks']) == 36
+          PY
+
+      - name: Commit XML plist
+        shell: bash
+        run: |
+          if git diff --quiet -- seyouxiaoshuo_taotao.plist; then
+            echo 'Plist is already XML text.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add seyouxiaoshuo_taotao.plist
+          git commit -m 'Convert plist to readable XML text'
+          git push
