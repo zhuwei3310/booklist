@@ -1,24 +1,22 @@
-name: Convert plist and rebuild ZIP
+name: Fix class XPath and rebuild ZIP
 
 on:
   push:
     paths:
       - '.github/workflows/convert-plist.yml'
-  issues:
-    types: [opened]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  convert:
+  rebuild:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Convert plist to XML text and rebuild ZIP
+      - name: Fix XPath and rebuild readable files
         shell: bash
         run: |
           python3 - <<'PY'
@@ -31,15 +29,110 @@ jobs:
 
           data = plistlib.loads(plist_path.read_bytes())
           source = data['serverList'][0]
-          assert len(source['cateBooks']) == 36
-          assert 'Windows NT 10.0' in source['searchBook']['searchPostValueAndKey'][0]['postValue']
+
+          def has_class(name: str) -> str:
+              return (
+                  "contains(concat(' ', normalize-space(@class), ' '), "
+                  f"' {name} ')"
+              )
+
+          list_division = (
+              f".//*[{has_class('tjshu')}]//li"
+              "[.//a[contains(@href,'/index.php/book/info/')]]"
+          )
+          book_name = f".//*[{has_class('name')}][1]"
+          author = f".//*[{has_class('inf2')}]//span[1]"
+          description = f".//*[{has_class('decs')}][1]"
+          cover = f".//*[{has_class('photo')}]//img[1]/@src"
+          book_url = ".//a[contains(@href,'/index.php/book/info/')][1]/@href"
+
+          category_parser = {
+              'cate_bookname': book_name,
+              'cate_author': author,
+              'cate_desc': description,
+              'cate_cover': cover,
+              'cate_detailUrl': book_url,
+              'cate_infoUrl': book_url,
+          }
+
+          categories = source['cateBooks']
+          assert len(categories) == 36
+          for category in categories:
+              category['cate_listDivision'] = list_division
+              parser = category['cate_parser']
+              parser.update(category_parser)
+
+          search = source['searchBook']
+          search['search_listDivision'] = list_division
+          search['search_parser'].update({
+              'search_bookname': book_name,
+              'search_author': author,
+              'search_desc': description,
+              'search_cover': cover,
+              'search_detailUrl': book_url,
+              'search_infoUrl': book_url,
+          })
+
+          detail = source['detailBook']
+          detail['lastUpdateDate'] = f".//*[{has_class('tjgxdt')}][1]"
+          detail['detail_author'] = f".//*[{has_class('at')}][1]"
+          detail['detail_img_cover'] = cover
+          detail['detail_desc'] = description
+
+          read = source['readBook']
+          read['chapterContent'] = f".//*[{has_class('tjc-cot')}][1]"
+
+          # 删除依赖完整 class 字符串的正文替换规则。
+          replacements = []
+          for item in read.get('contentReplaces', []):
+              keys = list(item.keys())
+              if keys and keys[0].startswith('<div class='):
+                  continue
+              replacements.append(item)
+          read['contentReplaces'] = replacements
+
+          source['serverInfo'] = (
+              'PC版XPath规则；分类1-36；所有class均按独立单词匹配，'
+              '兼容一个元素包含多个class值。'
+          )
+
+          # 校验 PC User-Agent。
+          header_groups = [
+              search['searchPostValueAndKey'],
+              detail['detail_mulu_headers'],
+              read['chapter_url_headers'],
+          ]
+          header_groups.extend(
+              category['catePostValueAndKey'] for category in categories
+          )
+          for headers in header_groups:
+              user_agents = [
+                  item['postValue']
+                  for item in headers
+                  if item.get('postKey') == 'User-Agent'
+              ]
+              assert user_agents
+              assert 'Windows NT 10.0' in user_agents[0]
+              assert 'iPhone' not in user_agents[0]
+              assert 'Mobile' not in user_agents[0]
+
+          # 校验所有关键 class XPath 都不再使用完整相等匹配。
+          assert "@class='" not in list_division
+          assert "normalize-space(@class)" in list_division
+          assert "normalize-space(@class)" in book_name
+          assert "normalize-space(@class)" in author
+          assert "normalize-space(@class)" in description
+          assert "normalize-space(@class)" in cover
+          assert "normalize-space(@class)" in read['chapterContent']
 
           xml_bytes = plistlib.dumps(
               data,
               fmt=plistlib.FMT_XML,
               sort_keys=False,
           )
-          assert xml_bytes.startswith(b'<?xml version="1.0" encoding="UTF-8"?>')
+          assert xml_bytes.startswith(
+              b'<?xml version="1.0" encoding="UTF-8"?>'
+          )
           assert not xml_bytes.startswith(b'bplist00')
           plist_path.write_bytes(xml_bytes)
 
@@ -49,21 +142,27 @@ jobs:
           with zipfile.ZipFile(zip_path, 'r') as zf:
               assert zf.namelist() == ['hahalove_book.plist']
               member = zf.read('hahalove_book.plist')
-              assert member.startswith(b'<?xml version="1.0" encoding="UTF-8"?>')
+              assert member.startswith(
+                  b'<?xml version="1.0" encoding="UTF-8"?>'
+              )
               assert not member.startswith(b'bplist00')
               parsed = plistlib.loads(member)
-              assert len(parsed['serverList']) == 1
+              parsed_source = parsed['serverList'][0]
+              assert len(parsed_source['cateBooks']) == 36
+              assert 'normalize-space(@class)' in (
+                  parsed_source['searchBook']['search_listDivision']
+              )
           PY
 
-      - name: Commit readable plist and ZIP
+      - name: Commit corrected Plist and ZIP
         shell: bash
         run: |
           if git diff --quiet -- seyouxiaoshuo_taotao.plist booklistsources.zip; then
-            echo 'Plist and ZIP already contain readable XML text.'
+            echo 'Plist and ZIP already use multi-class-safe XPath.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add seyouxiaoshuo_taotao.plist booklistsources.zip
-          git commit -m 'Store plist and ZIP as readable XML text'
+          git commit -m '兼容包含多个 class 的页面元素'
           git push
