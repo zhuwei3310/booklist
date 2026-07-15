@@ -1,8 +1,9 @@
-name: Convert plist to XML
+name: Convert plist and rebuild ZIP
 
 on:
-  issues:
-    types: [opened]
+  push:
+    paths:
+      - '.github/workflows/convert-plist.yml'
   workflow_dispatch:
 
 permissions:
@@ -15,35 +16,52 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Convert binary plist to XML text
+      - name: Convert plist to XML text and rebuild ZIP
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import plistlib
+          import zipfile
 
-          path = Path('seyouxiaoshuo_taotao.plist')
-          data = plistlib.loads(path.read_bytes())
+          plist_path = Path('seyouxiaoshuo_taotao.plist')
+          zip_path = Path('booklistsources.zip')
+
+          data = plistlib.loads(plist_path.read_bytes())
           source = data['serverList'][0]
           assert len(source['cateBooks']) == 36
           assert 'Windows NT 10.0' in source['searchBook']['searchPostValueAndKey'][0]['postValue']
 
-          path.write_bytes(
-              plistlib.dumps(data, fmt=plistlib.FMT_XML, sort_keys=False)
+          xml_bytes = plistlib.dumps(
+              data,
+              fmt=plistlib.FMT_XML,
+              sort_keys=False,
           )
-          text = path.read_text(encoding='utf-8')
-          assert text.startswith('<?xml version="1.0" encoding="UTF-8"?>')
+          assert xml_bytes.startswith(b'<?xml version="1.0" encoding="UTF-8"?>')
+          assert not xml_bytes.startswith(b'bplist00')
+          plist_path.write_bytes(xml_bytes)
+
+          with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
+              zf.writestr('hahalove_book.plist', xml_bytes)
+
+          with zipfile.ZipFile(zip_path, 'r') as zf:
+              assert zf.namelist() == ['hahalove_book.plist']
+              member = zf.read('hahalove_book.plist')
+              assert member.startswith(b'<?xml version="1.0" encoding="UTF-8"?>')
+              assert not member.startswith(b'bplist00')
+              parsed = plistlib.loads(member)
+              assert len(parsed['serverList']) == 1
           PY
 
-      - name: Commit XML plist
+      - name: Commit readable plist and ZIP
         shell: bash
         run: |
-          if git diff --quiet -- seyouxiaoshuo_taotao.plist; then
-            echo 'Plist is already XML text.'
+          if git diff --quiet -- seyouxiaoshuo_taotao.plist booklistsources.zip; then
+            echo 'Plist and ZIP already contain readable XML text.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add seyouxiaoshuo_taotao.plist
-          git commit -m 'Convert plist to readable XML text'
+          git add seyouxiaoshuo_taotao.plist booklistsources.zip
+          git commit -m 'Store plist and ZIP as readable XML text'
           git push
