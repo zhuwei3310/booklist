@@ -6,7 +6,14 @@
 
 - 导入文件：`booklistsources.zip`
 - 目标站点：`https://seyouxiaoshuo.com/`
-- 制作日期：2026-07-15
-- 包内为淘淘阅读 XML Plist 书源配置。
+- 更新日期：2026-07-15
+- 分类：严格按站点 PC 版分类 ID 1–36 配置
+- 请求头：搜索、分类、目录和正文统一使用 PC User-Agent
 
-淘淘阅读可通过 `booklistsources.zip` 的 Raw 地址进行网址导入。
+## 淘淘阅读导入地址
+
+```text
+https://raw.githubusercontent.com/zhuwei3310/booklist/main/booklistsources.zip
+```
+
+无需登录 GitHub，可直接下载或在淘淘阅读中使用网址导入。
