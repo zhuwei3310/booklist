@@ -1,10 +1,9 @@
 name: Convert plist to XML
 
 on:
-  push:
-    paths:
-      - '.github/workflows/convert-plist.yml'
-      - 'seyouxiaoshuo_taotao.plist'
+  issues:
+    types: [opened]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,13 +24,15 @@ jobs:
 
           path = Path('seyouxiaoshuo_taotao.plist')
           data = plistlib.loads(path.read_bytes())
+          source = data['serverList'][0]
+          assert len(source['cateBooks']) == 36
+          assert 'Windows NT 10.0' in source['searchBook']['searchPostValueAndKey'][0]['postValue']
+
           path.write_bytes(
               plistlib.dumps(data, fmt=plistlib.FMT_XML, sort_keys=False)
           )
-
           text = path.read_text(encoding='utf-8')
           assert text.startswith('<?xml version="1.0" encoding="UTF-8"?>')
-          assert len(data['serverList'][0]['cateBooks']) == 36
           PY
 
       - name: Commit XML plist
