@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - '.github/workflows/convert-plist.yml'
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 permissions:
