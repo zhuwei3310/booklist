@@ -16,6 +16,7 @@
 				<key>serverQuanZhong</key>
 				<integer>650</integer>
 				<key>serverInfo</key>
+				<string></string>
 				<key>cateBooks</key>
 				<array>
 					<dict>
@@ -1813,7 +1814,7 @@
 					<key>chapter_dataGBKtoUTF8</key>
 					<string>0</string>
 					<key>chapterContent</key>
-					<string>.//*[@class='tjc-cot']text()</string>
+					<string>.//*[@class='tjc-cot']/text()</string>
 					<key>chapter_url_headers</key>
 					<array>
 						<dict>
@@ -1829,6 +1830,7 @@
 					<key>chapterNextPageUrl</key>
 					<string></string>
 					<key>contentReplaces</key>
+					<array/>
 					<key>contentRegularExpressi</key>
 					<array />
 				</dict>
