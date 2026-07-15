@@ -14,7 +14,7 @@
 				<key>serverIsEndble</key>
 				<true />
 				<key>serverQuanZhong</key>
-				<integer>650</integer>
+				<integer>1000</integer>
 				<key>serverInfo</key>
 				<string></string>
 				<key>cateBooks</key>
@@ -34,8 +34,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -81,8 +80,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -128,8 +126,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -175,8 +172,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -222,8 +218,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -269,8 +264,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -316,8 +310,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -363,8 +356,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -410,8 +402,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -457,8 +448,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -504,8 +494,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -551,8 +540,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -598,8 +586,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -645,8 +632,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -692,8 +678,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -739,8 +724,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -786,8 +770,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -833,8 +816,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -880,8 +862,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -927,8 +908,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -974,8 +954,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1021,8 +1000,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1068,8 +1046,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1115,8 +1092,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1162,8 +1138,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1209,8 +1184,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1256,8 +1230,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1303,8 +1276,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1350,8 +1322,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1397,8 +1368,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1444,8 +1414,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1491,8 +1460,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1538,8 +1506,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1585,8 +1552,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1632,8 +1598,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1679,8 +1644,7 @@
 								<key>postKey</key>
 								<string>User-Agent</string>
 								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-									Safari/537.36</string>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 								<key>postLocation</key>
 								<string>header</string>
 							</dict>
@@ -1726,8 +1690,7 @@
 							<key>postKey</key>
 							<string>User-Agent</string>
 							<key>postValue</key>
-							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-								Safari/537.36</string>
+							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 							<key>postLocation</key>
 							<string>header</string>
 						</dict>
@@ -1788,8 +1751,7 @@
 							<key>postKey</key>
 							<string>User-Agent</string>
 							<key>postValue</key>
-							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-								Safari/537.36</string>
+							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 							<key>postLocation</key>
 							<string>header</string>
 						</dict>
@@ -1814,15 +1776,14 @@
 					<key>chapter_dataGBKtoUTF8</key>
 					<string>0</string>
 					<key>chapterContent</key>
-					<string>.//*[@class='tjc-cot']/text()</string>
+					<string>.//*[@id='chapter-content']//text()</string>
 					<key>chapter_url_headers</key>
 					<array>
 						<dict>
 							<key>postKey</key>
 							<string>User-Agent</string>
 							<key>postValue</key>
-							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0
-								Safari/537.36</string>
+							<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
 							<key>postLocation</key>
 							<string>header</string>
 						</dict>
