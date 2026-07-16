@@ -21,11 +21,11 @@
 				<array>
 					<dict>
 						<key>cateName</key>
-						<string>校园</string>
+						<string>经典</string>
 						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/1</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/8</string>
 						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/1/page/###</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/8/page/###</string>
 						<key>cate_URL_Unicode</key>
 						<string>0</string>
 						<key>catePostValueAndKey</key>
@@ -67,11 +67,11 @@
 					</dict>
 					<dict>
 						<key>cateName</key>
-						<string>东方</string>
+						<string>系统</string>
 						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/2</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/9</string>
 						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/2/page/###</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/9/page/###</string>
 						<key>cate_URL_Unicode</key>
 						<string>0</string>
 						<key>catePostValueAndKey</key>
@@ -113,11 +113,149 @@
 					</dict>
 					<dict>
 						<key>cateName</key>
-						<string>乡村</string>
+						<string>穿越</string>
 						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/3</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/10</string>
 						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/3/page/###</string>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/10/page/###</string>
+						<key>cate_URL_Unicode</key>
+						<string>0</string>
+						<key>catePostValueAndKey</key>
+						<array>
+							<dict>
+								<key>postKey</key>
+								<string>User-Agent</string>
+								<key>postValue</key>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
+								<key>postLocation</key>
+								<string>header</string>
+							</dict>
+						</array>
+						<key>cate_listDivision</key>
+						<string>.//*[@class='tjshu']//li</string>
+						<key>cate_list_Xpath</key>
+						<string>1</string>
+						<key>cate_dataGBKtoUTF8</key>
+						<string>0</string>
+						<key>cate_parser</key>
+						<dict>
+							<key>cate_bookname</key>
+							<string>.//*[contains(@class,'name')]</string>
+							<key>cate_author</key>
+							<string>.//*[@class='inf2']/span[1]</string>
+							<key>cate_desc</key>
+							<string>.//*[contains(@class,'decs')]</string>
+							<key>cate_cover</key>
+							<string>.//*[@class='photo']//img[1]/@src</string>
+							<key>cate_detailUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_detailUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+							<key>cate_infoUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_infoUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>cateName</key>
+						<string>同人</string>
+						<key>cateFirstPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/12</string>
+						<key>cateNextPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/12/page/###</string>
+						<key>cate_URL_Unicode</key>
+						<string>0</string>
+						<key>catePostValueAndKey</key>
+						<array>
+							<dict>
+								<key>postKey</key>
+								<string>User-Agent</string>
+								<key>postValue</key>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
+								<key>postLocation</key>
+								<string>header</string>
+							</dict>
+						</array>
+						<key>cate_listDivision</key>
+						<string>.//*[@class='tjshu']//li</string>
+						<key>cate_list_Xpath</key>
+						<string>1</string>
+						<key>cate_dataGBKtoUTF8</key>
+						<string>0</string>
+						<key>cate_parser</key>
+						<dict>
+							<key>cate_bookname</key>
+							<string>.//*[contains(@class,'name')]</string>
+							<key>cate_author</key>
+							<string>.//*[@class='inf2']/span[1]</string>
+							<key>cate_desc</key>
+							<string>.//*[contains(@class,'decs')]</string>
+							<key>cate_cover</key>
+							<string>.//*[@class='photo']//img[1]/@src</string>
+							<key>cate_detailUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_detailUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+							<key>cate_infoUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_infoUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>cateName</key>
+						<string>强奸</string>
+						<key>cateFirstPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/13</string>
+						<key>cateNextPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/13/page/###</string>
+						<key>cate_URL_Unicode</key>
+						<string>0</string>
+						<key>catePostValueAndKey</key>
+						<array>
+							<dict>
+								<key>postKey</key>
+								<string>User-Agent</string>
+								<key>postValue</key>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
+								<key>postLocation</key>
+								<string>header</string>
+							</dict>
+						</array>
+						<key>cate_listDivision</key>
+						<string>.//*[@class='tjshu']//li</string>
+						<key>cate_list_Xpath</key>
+						<string>1</string>
+						<key>cate_dataGBKtoUTF8</key>
+						<string>0</string>
+						<key>cate_parser</key>
+						<dict>
+							<key>cate_bookname</key>
+							<string>.//*[contains(@class,'name')]</string>
+							<key>cate_author</key>
+							<string>.//*[@class='inf2']/span[1]</string>
+							<key>cate_desc</key>
+							<string>.//*[contains(@class,'decs')]</string>
+							<key>cate_cover</key>
+							<string>.//*[@class='photo']//img[1]/@src</string>
+							<key>cate_detailUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_detailUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+							<key>cate_infoUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_infoUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>cateName</key>
+						<string>堕落</string>
+						<key>cateFirstPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/16</string>
+						<key>cateNextPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/16/page/###</string>
 						<key>cate_URL_Unicode</key>
 						<string>0</string>
 						<key>catePostValueAndKey</key>
@@ -164,6 +302,98 @@
 						<string>https://seyouxiaoshuo.com/index.php/book/category/list/4</string>
 						<key>cateNextPageUrl</key>
 						<string>https://seyouxiaoshuo.com/index.php/book/category/list/4/page/###</string>
+						<key>cate_URL_Unicode</key>
+						<string>0</string>
+						<key>catePostValueAndKey</key>
+						<array>
+							<dict>
+								<key>postKey</key>
+								<string>User-Agent</string>
+								<key>postValue</key>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
+								<key>postLocation</key>
+								<string>header</string>
+							</dict>
+						</array>
+						<key>cate_listDivision</key>
+						<string>.//*[@class='tjshu']//li</string>
+						<key>cate_list_Xpath</key>
+						<string>1</string>
+						<key>cate_dataGBKtoUTF8</key>
+						<string>0</string>
+						<key>cate_parser</key>
+						<dict>
+							<key>cate_bookname</key>
+							<string>.//*[contains(@class,'name')]</string>
+							<key>cate_author</key>
+							<string>.//*[@class='inf2']/span[1]</string>
+							<key>cate_desc</key>
+							<string>.//*[contains(@class,'decs')]</string>
+							<key>cate_cover</key>
+							<string>.//*[@class='photo']//img[1]/@src</string>
+							<key>cate_detailUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_detailUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+							<key>cate_infoUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_infoUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>cateName</key>
+						<string>凌辱</string>
+						<key>cateFirstPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/18</string>
+						<key>cateNextPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/18/page/###</string>
+						<key>cate_URL_Unicode</key>
+						<string>0</string>
+						<key>catePostValueAndKey</key>
+						<array>
+							<dict>
+								<key>postKey</key>
+								<string>User-Agent</string>
+								<key>postValue</key>
+								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
+								<key>postLocation</key>
+								<string>header</string>
+							</dict>
+						</array>
+						<key>cate_listDivision</key>
+						<string>.//*[@class='tjshu']//li</string>
+						<key>cate_list_Xpath</key>
+						<string>1</string>
+						<key>cate_dataGBKtoUTF8</key>
+						<string>0</string>
+						<key>cate_parser</key>
+						<dict>
+							<key>cate_bookname</key>
+							<string>.//*[contains(@class,'name')]</string>
+							<key>cate_author</key>
+							<string>.//*[@class='inf2']/span[1]</string>
+							<key>cate_desc</key>
+							<string>.//*[contains(@class,'decs')]</string>
+							<key>cate_cover</key>
+							<string>.//*[@class='photo']//img[1]/@src</string>
+							<key>cate_detailUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_detailUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+							<key>cate_infoUrl</key>
+							<string>.//a/@href</string>
+							<key>cate_infoUrladdString</key>
+							<string>https://seyouxiaoshuo.com</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>cateName</key>
+						<string>科学</string>
+						<key>cateFirstPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/11</string>
+						<key>cateNextPageUrl</key>
+						<string>https://seyouxiaoshuo.com/index.php/book/category/list/11/page/###</string>
 						<key>cate_URL_Unicode</key>
 						<string>0</string>
 						<key>catePostValueAndKey</key>
@@ -343,282 +573,6 @@
 					</dict>
 					<dict>
 						<key>cateName</key>
-						<string>经典</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/8</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/8/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>系统</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/9</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/9/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>穿越</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/10</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/10/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>科学</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/11</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/11/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>同人</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/12</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/12/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>强奸</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/13</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/13/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
 						<string>西方</string>
 						<key>cateFirstPageUrl</key>
 						<string>https://seyouxiaoshuo.com/index.php/book/category/list/14</string>
@@ -665,149 +619,11 @@
 					</dict>
 					<dict>
 						<key>cateName</key>
-						<string>贤者</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/15</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/15/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>堕落</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/16</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/16/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
 						<string>反差</string>
 						<key>cateFirstPageUrl</key>
 						<string>https://seyouxiaoshuo.com/index.php/book/category/list/17</string>
 						<key>cateNextPageUrl</key>
 						<string>https://seyouxiaoshuo.com/index.php/book/category/list/17/page/###</string>
-						<key>cate_URL_Unicode</key>
-						<string>0</string>
-						<key>catePostValueAndKey</key>
-						<array>
-							<dict>
-								<key>postKey</key>
-								<string>User-Agent</string>
-								<key>postValue</key>
-								<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36</string>
-								<key>postLocation</key>
-								<string>header</string>
-							</dict>
-						</array>
-						<key>cate_listDivision</key>
-						<string>.//*[@class='tjshu']//li</string>
-						<key>cate_list_Xpath</key>
-						<string>1</string>
-						<key>cate_dataGBKtoUTF8</key>
-						<string>0</string>
-						<key>cate_parser</key>
-						<dict>
-							<key>cate_bookname</key>
-							<string>.//*[contains(@class,'name')]</string>
-							<key>cate_author</key>
-							<string>.//*[@class='inf2']/span[1]</string>
-							<key>cate_desc</key>
-							<string>.//*[contains(@class,'decs')]</string>
-							<key>cate_cover</key>
-							<string>.//*[@class='photo']//img[1]/@src</string>
-							<key>cate_detailUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_detailUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-							<key>cate_infoUrl</key>
-							<string>.//a/@href</string>
-							<key>cate_infoUrladdString</key>
-							<string>https://seyouxiaoshuo.com</string>
-						</dict>
-					</dict>
-					<dict>
-						<key>cateName</key>
-						<string>凌辱</string>
-						<key>cateFirstPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/18</string>
-						<key>cateNextPageUrl</key>
-						<string>https://seyouxiaoshuo.com/index.php/book/category/list/18/page/###</string>
 						<key>cate_URL_Unicode</key>
 						<string>0</string>
 						<key>catePostValueAndKey</key>
@@ -1736,7 +1552,7 @@
 					<key>lastUpdateDate</key>
 					<string>.//*[@class='tjgxdt']</string>
 					<key>detail_author</key>
-					<string>.//*[@class='at']</string>
+					<string></string>
 					<key>detail_img_cover</key>
 					<string>.//*[@class='photo']//img[1]/@src</string>
 					<key>detail_desc</key>
