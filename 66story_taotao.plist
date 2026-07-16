@@ -64,7 +64,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -128,7 +128,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -192,7 +192,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -256,7 +256,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -320,7 +320,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -384,7 +384,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -448,7 +448,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -512,7 +512,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -576,7 +576,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -640,7 +640,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -704,7 +704,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -768,7 +768,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -832,7 +832,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -896,7 +896,7 @@
 						<key>cate_desc</key>
 						<string>.//div[@class='desc']</string>
 						<key>cate_cover</key>
-						<string>.//img[1]/@src</string>
+						<string>.//img[1]/@data-src</string>
 						<key>cate_coveraddString</key>
 						<string></string>
 						<key>cate_coverendString</key>
@@ -972,13 +972,13 @@
 					<key>search_coverendString</key>
 					<string></string>
 					<key>search_detailUrl</key>
-					<string>.//a[contains(@href,'/index.php/book/info/')][last()]/@href</string>
+					<string>.//a/@href</string>
 					<key>search_detailUrladdString</key>
 					<string>https://66story.com</string>
 					<key>search_detailUrlendString</key>
 					<string></string>
 					<key>search_infoUrl</key>
-					<string>.//a[contains(@href,'/index.php/book/info/')][last()]/@href</string>
+					<string>.//a/@href</string>
 					<key>search_infoUrladdString</key>
 					<string>https://66story.com</string>
 					<key>search_infoUrlendString</key>
@@ -994,7 +994,7 @@
 				<key>detail_author</key>
 				<string>.//*[contains(@class,'story-detail__info')]//*[@class='author']//a</string>
 				<key>detail_img_cover</key>
-				<string>.//*[contains(@class,'story-detail__info')]//div[@class='cover']//img[1]/@src</string>
+				<string>.//*[contains(@class,'story-detail__info')]//*[@class='cover']//img[1]/@data-src</string>
 				<key>detail_coveraddString</key>
 				<string></string>
 				<key>detail_coverendString</key>
@@ -1031,7 +1031,7 @@
 				<key>detail_muLuUrlendString</key>
 				<string></string>
 				<key>mulu_list</key>
-				<string>.//*[@class='catalog__main']//*[@class='llist']//*[@class='item']</string>
+				<string>.//*[@class='catalog__main']//*[@class='list']//a[@href]</string>
 				<key>mulu_url</key>
 				<string>./@href</string>
 				<key>mulu_title</key>
